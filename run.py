@@ -11,6 +11,16 @@ loading_finished = False
 
 def load_hierarchy():
     try:
+        # check if Tabelle2.xlsx is downloaded
+        database_path = abs_path("resources/database/Tabelle2.xlsx")
+
+        if not database_path.is_file():
+            raise FileNotFoundError(
+                f"Product hierarchy database now found:\n"
+                f"{database_path}\n\n"
+                "Please see resources/database/README.md"
+            )
+        
         hierarchy = ProductHierarchy(resource_path("resources/database/Tabelle2.xlsx"))
         load_result.put(("success", hierarchy))
     except Exception as error:

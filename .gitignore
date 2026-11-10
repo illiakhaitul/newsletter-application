@@ -5,6 +5,9 @@ __pycache__/
 /dist/
 /output/
 
+# product hierarchy database
+/resources/database/Tabelle2.xlsx
+
 main.py
 test_main.py
 test_run.py
