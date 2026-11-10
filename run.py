@@ -2,7 +2,7 @@ import os, re, shutil, time, threading, pyglet, ctypes, queue
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import messagebox
-from app.application import App
+from app.app import App
 from common.common import *
 from scripts.scripts import *
 
