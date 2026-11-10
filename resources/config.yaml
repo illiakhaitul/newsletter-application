@@ -1,0 +1,6 @@
+PATHS:
+  output: output
+
+HEADER_MASK: 'AT_{num:05d}_{pg}'
+HEADER_REGEX: "AT_\\d{5}_[A-Z0-9]+_\\d{2}\\.\\d{4}"
+PRODUCT_GROUP: 'MGE'

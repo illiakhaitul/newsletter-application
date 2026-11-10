@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+
+/build/
+/dist/
+/output/
+
+main.py
+test_main.py
+test_run.py
+test_app.py
+NewsletterApplication.spec
